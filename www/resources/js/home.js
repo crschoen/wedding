@@ -2,7 +2,6 @@ me = $(self);
 
 
 me.resize(function() {
-    console.log(content.offset().top);
     var a = 0 > content.offset().top - 5;
     var b = 0 > content.offset().left - 5;
     if (a) {
@@ -13,7 +12,7 @@ me.resize(function() {
     if (me.height() > height) {
         content.removeClass('sticktop');
     }
-    
+    console.log(me.height());
     if (b) {
         content.toggleClass('stickleft', b);
         width = me.width();
@@ -27,4 +26,20 @@ me.resize(function() {
 height = null;
 width = null;
 content = $('#content');
+
+var y = 0 > content.offset().top - 5;
+var z = 0 > content.offset().left - 5;
+
+if (y) {
+    content.addClass('sticktop');
+    height = 640;
+}
+
+if (z) {
+    content.toggleClass('stickleft', b);
+    width = 710;
+}
+
+
+
 
