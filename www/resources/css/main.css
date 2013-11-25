@@ -1,0 +1,128 @@
+root { 
+    display: block;
+}
+
+body {
+    /*background-image: url("/img/background.jpg");*/
+    margin: 0px;
+}
+
+div {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+html {
+    background: url("/img/background.jpg") no-repeat center center fixed;    
+    background-size: cover;
+}
+
+body::after {
+    max-height: 100%;
+    max-width: 100%;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+
+#content {
+    border-radius: 3px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -315px;
+    height: 430px;
+    width: 700px;
+    background-color: rgba(255,255,255,0.85);
+    box-shadow: 0px 0px 2px 5px rgba(0,128,192, .1); 
+}
+
+#content.sticktop {
+    top: 320px;
+}
+
+#content.stickleft {
+    left: 355px;
+}
+
+div.navigation {
+
+    line-height: 150%;
+    text-align: center;
+    height: 100%;
+    margin-top: 15px;
+    width: 20%;
+    float: left;
+}
+
+a:link {
+    color:darkslategray;
+    text-decoration: none;
+}
+a:visited {
+    color:darkslategray;
+    text-decoration: none;
+}
+a:hover {color:darkturquoise ;}
+a:active {color:darkturquoise;}
+
+div.header {
+    width: 650px;
+    background-color: background;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.main {
+    width: 80%;
+    float: left;
+    padding-top: 40px;
+    text-align: center;
+}
+
+div.main img {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+}
+
+div.clock {
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 220px;
+    background-color: rgb(43,197,206);
+    color: white;
+    margin: 0 auto;
+    box-shadow: 1px 1px 2px 5px rgb(118,160,199);
+    border-radius: 5px;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+p {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center; 
+}
+
+div.greeting {
+    margin-left: 20px;
+    margin-right: 30px;
+
+}
+
+h1 {
+    line-height: 100%;
+    text-align: center;
+    color: darkslategray;
+    margin-bottom: 0px;
+    text-shadow: darkblue;
+}
