@@ -12,7 +12,6 @@ me.resize(function() {
     if (me.height() > height) {
         content.removeClass('sticktop');
     }
-    console.log(me.height());
     if (b) {
         content.toggleClass('stickleft', b);
         width = me.width();
