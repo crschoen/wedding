@@ -23,6 +23,7 @@ try {
                 <a href="?location=map">Map of Events</a><br>
                 <a href="?location=clearlake">Clear Lake</a><br>
                 <a href="?location=houston">Downtown Houston</a><br>
+                <a href="?location=registry">Registry</a><br>
                 <div id="bottombreak"></div>
             </div>
             <div class="main">
